@@ -1,8 +1,11 @@
 # OclintTranslateCheckstyleFormat
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/oclint_translate_checkstyle_format`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/oclint_translate_checkstyle_format.svg)](http://badge.fury.io/rb/oclint_translate_checkstyle_format)
+[![Build Status](https://travis-ci.org/noboru-i/oclint_translate_checkstyle_format.svg?branch=master)](https://travis-ci.org/noboru-i/oclint_translate_checkstyle_format)
+[![Code Climate](https://codeclimate.com/github/noboru-i/oclint_translate_checkstyle_format/badges/gpa.svg)](https://codeclimate.com/github/noboru-i/oclint_translate_checkstyle_format)
+[![Coverage Status](https://coveralls.io/repos/noboru-i/oclint_translate_checkstyle_format/badge.svg)](https://coveralls.io/r/noboru-i/oclint_translate_checkstyle_format)
 
-TODO: Delete this and the text above, and describe your gem
+Translate SwiftLint json format into checkstyle format.
 
 ## Installation
 
@@ -22,7 +25,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First, you install [OCLint](http://oclint.org/).
+And execute it with option `-report-type json`.
+
+### Use pipe
+
+```
+cat oclint.result.json | oclint_translate_checkstyle_format translate
+```
+
+### Use command-line option
+
+```
+oclint_translate_checkstyle_format translate --file="oclint.result.json"
+
 
 ## Development
 
@@ -33,4 +49,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/oclint_translate_checkstyle_format.
-
