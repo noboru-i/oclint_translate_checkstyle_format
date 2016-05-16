@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'oclint_translate_checkstyle_format'
+require 'oclint_translate_checkstyle_format/cli'
+
+OclintTranslateCheckstyleFormat::CLI.start

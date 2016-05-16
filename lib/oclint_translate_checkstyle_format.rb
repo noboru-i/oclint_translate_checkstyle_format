@@ -1,5 +1,5 @@
 require "oclint_translate_checkstyle_format/version"
+require 'oclint_translate_checkstyle_format/translate'
 
 module OclintTranslateCheckstyleFormat
-  # Your code goes here...
 end
